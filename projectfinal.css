@@ -1,4 +1,11 @@
-	/* Typography styles */
+/* Set viewport meta tag for responsive behavior */
+@viewport {
+    width: device-width;
+    initial-scale: 1;
+}
+
+
+/* Typography styles */
 		:root {
 			--font-size-sm: clamp(0.8rem, 0.17vh + 0.76rem, 0.89rem);
 			--font-size-base: clamp(1rem, 0.34vh + 0.91rem, 1.19rem);
