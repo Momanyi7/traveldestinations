@@ -1,0 +1,461 @@
+	/* Typography styles */
+		:root {
+			--font-size-sm: clamp(0.8rem, 0.17vh + 0.76rem, 0.89rem);
+			--font-size-base: clamp(1rem, 0.34vh + 0.91rem, 1.19rem);
+			--font-size-md: clamp(1.25rem, 0.61vh + 1.1rem, 1.58rem);
+			--font-size-lg: clamp(1.56rem, 1vh + 1.31rem, 2.11rem);
+			--font-size-xl: clamp(1.95rem, 1.56vh + 1.56rem, 2.81rem);
+			--font-size-xxl: clamp(2.44rem, 2.38vh + 1.85rem, 3.75rem);
+			--font-size-xxxl: clamp(3.05rem, 3.54vh + 2.17rem, 5rem);
+			
+	}
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Calistoga', cursive;
+			font-weight: 100%;
+		}
+
+		p, figcaption, blockquote, a {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		h1 {
+			font-size: var(--font-size-xxl);
+		}
+
+		h2 {
+			font-size: var(--font-size-xl);
+		}
+
+		h3, blockquote {
+			font-size: var(--font-size-lg);
+		}
+
+		h4 {
+			font-size: var(--font-size-md);
+		}
+
+		h5, p {
+			font-size: var(--font-size-base);
+		}
+
+		h6, small {
+			font-size: var(--font-size-sm);
+		}
+
+		body {
+			background-color: green; /* Add your preferred background color */
+			width: 100%;
+			margin: 0; /* Reset default margin */
+			padding: 0; /* Reset default padding */
+		}
+
+		.wrapper {
+			width: 80%;
+			background-color:black;
+			color:white;
+			margin: auto;
+			padding: 20px;
+			display: evenly;
+			box-sizing: border-box;
+		}
+
+		header {
+			background-color: black;
+			color: white;
+			text-align: center;
+			grid-area: header;
+			display: flex;
+			justify-content: center;
+		}
+
+		nav, .main-content .footer-content {
+			background-color: black;
+			padding: 20px;
+			margin: 0 auto;
+			box-sizing: border-box;
+		}
+
+		nav ul {
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			padding: 1em;
+			margin: 0 auto;
+		}
+
+		nav ul li {
+			margin-right: 3rem;
+		}
+
+		nav ul li:last-child {
+			margin-right: 0;
+		}
+
+		nav a {
+			text-decoration: underline;
+			color:lightblue;
+		}
+
+		.grid-container {
+			display: grid;
+			grid-template-areas:
+				"header header header header header"
+				"nav nav nav nav nav"
+				"feature feature feature feature feature"
+				"main main main main main"
+				"side side side side side"
+				"footer footer footer footer footer";
+			grid-template-columns: repeat(5, 1fr);
+			grid-gap: 1rem;
+			width: clamp(20rem, 10vw - 6rem, 75rem);
+			margin: 0 auto;
+			padding: 0 3rem;
+			background-color: gold;
+		}
+
+		.feature {
+    grid-area: feature;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue-medium;
+    color: white;
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.feature-text {
+    flex: 1; /* Allow text to grow to fill available space */
+    max-width: 50%; /* Limit text width to half of the container */
+}
+
+.feature-fig {
+    flex: 1; /* Allow figure to grow to fill available space */
+    max-width: 50%; /* Limit figure width to half of the container */
+}
+
+
+		.main-content {
+			grid-area: main;
+			max-width: 75ch;
+			padding: 20px;
+			margin: 10px;
+			background-color:black;
+			color:white;
+		}
+
+	.additional-content-area {
+		display: flex;
+		justify-content: space-between;  /* Aligns children (sidebar and gallery) side by side */
+		align-items: start;  /* Aligns children at the top */
+		gap:1px;  /* Adds space between the sidebar and gallery */
+		padding: 20px;  /* Adds padding inside the content area */
+		margin: 10px; /* Consistent margin around the content area */
+		max-width: 75ch; /* Maximum width constraint */
+		grid-area: side; /* If used within a grid layout */
+		color: white; /* Text color */
+	}
+
+	/* Sidebar Flex Properties */
+	.sidebar {
+		flex: 1;  /* Takes up 1 portion of the available space */
+		max-width: 75ch;  /* Maximum width of the sidebar, independent of content width */
+		background-color: #f9f9f9; /* Light gray background */
+		padding: 10px;
+		border-radius: 8px; /* Rounded corners */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+		margin: 20px; /* Consistent margin for aesthetics and spacing */
+	}
+
+	/* Sidebar Typography and Links */
+	.sidebar h2 {
+		color: #333; /* Darker shade for the title for contrast */
+		font-size: 1.5rem; /* Larger font size for headings */
+		margin-bottom: 16px; /* Space below the heading */
+	}
+
+	.sidebar ul {
+		list-style-type: none; /* Removes default list styling */
+		padding: 0; /* Removes default padding */
+		margin: 0; /* Removes default margin */
+	}
+
+	.sidebar ul li {
+		padding: 8px 0; /* Vertical padding for each list item */
+	}
+
+	.sidebar ul li a {
+		color: #0066cc; /* Sets the link color */
+		text-decoration: none; /* Removes underline from links */
+		font-size: 1.1rem; /* Slightly larger font size for readability */
+		transition: color 0.3s; /* Smooth transition for hover effect */
+	}
+
+	.sidebar ul li a:hover {
+		color: #ff6600; /* Changes color on hover */
+		text-decoration: underline; /* Adds underline on hover */
+	}
+
+	/* Gallery Styles */
+	.gallery {
+		flex: 2;  /* Takes up 2 portions of the available space, making it larger than the sidebar */
+		display: grid;  /* Continues using grid layout for the gallery */
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Responsive grid columns */
+		gap:5px;  /* Spacing between grid items */
+	}
+
+		img {
+			max-width: 100%;
+		}
+
+		.article-wrapper, .gallery {
+			max-width: 100%;
+			margin: 0 auto;
+			box-sizing: border-box;
+		}
+
+		.article-wrapper {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 20px;
+		}
+
+		.article-wrapper article {
+			background-color: brown;
+			padding: 20px;
+		}
+
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 20px;
+		}
+
+		.gallery figure {
+			background-color: black;
+			padding: 10px;
+		}
+
+		.gallery img {
+			width: 100%;
+		}
+
+		@media screen and (min-width: 48rem) {
+			.grid-container {
+				grid-template-areas:
+					"header header header header header"
+					"nav nav nav nav nav"
+					"feature feature feature feature feature"
+					"main main main main main"
+					"side side side side side"
+					"footer footer footer footer footer";
+			}
+		}
+
+		@media (min-width: 64rem) {
+			.grid-container {
+				grid-template-areas:
+					"header header header header header"
+					"nav nav nav nav nav"
+					"feature feature feature feature feature"
+					"main main main main main"
+					"side side side side side"
+					"footer footer footer footer footer";
+			}
+			header {
+				justify-content: flex-start;
+			}
+			nav ul {
+				justify-content: flex-end;
+			}
+		}
+		blockquote {
+			margin: .6em 0; /* Adds space around the blockquote */
+			padding: .5em; /* Adds space inside the blockquote */
+			background-color: green; /* A light background to distinguish the quote */
+			border-left: 15px solid black; /* A subtle border to the left for distinction */
+			color: orange; /* Darker text color for contrast */
+			font-style: italic; /* Italicizes the quote text for emphasis */
+			font-size: 1.2em; /* Makes the quote text larger than the surrounding text */
+			line-height: 1.1; /* Adjusts the line height for better readability */
+		}
+		footer {
+		background-color: grey;
+		padding: 20px 0;
+		text-align: center;
+		position: relative;
+	}
+
+	.footer-content {
+		border-bottom: 2px solid #ddd; /* Subtle line to separate from the copyright */
+		padding-bottom: 40px;
+	}
+
+	footer p {
+		position: absolute;
+		bottom: -25px; /* Position it partially outside the footer */
+		left: 50%;
+		transform: translateX(-50%);
+		width: calc(100% - 40px); /* Ensure it doesn’t touch the edges */
+		background-color: chocolate;
+		color: #333;
+		padding: 10px 20px;
+		margin: 0;
+		font-size: 0.9rem;
+		border: 1px solid #dddd;
+		border-radius: 8px; /* Rounded corners */
+		box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Stronger shadow for more separation */
+	}
+
+
+
+		.newsletter, .social-links {
+			flex: 1; /* Each section takes equal space */
+		}
+
+		.newsletter form, .social-links ul {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap:5px; /* Space between elements in the form */
+		}
+
+		.social-links ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		.social-links li {
+			display: inline; /* Display links inline */
+			margin: 0 10px; /* Space between links */
+		}
+
+		input[type="email"] {
+			padding: 10px;
+			border: 1px solid #ccc; /* Subtle border for the input */
+			border-radius: 5px; /* Rounded corners for the input field */
+		}
+
+		button {
+			padding: 10px 15px;
+			background-color: #007bff; /* Bootstrap blue */
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #0056b3; /* Darker blue on hover */
+		}
+
+		footer p {
+			margin-top: 20px; /* Space above the copyright text */
+		}
+
+		/* Content and sidebar layout for about.html page */
+	.about-content {
+		display: flex;
+	}
+
+	.main-content {
+		flex: 2; /* Adjust the width of the main content area */
+	}
+
+	.side-content {
+		flex: 1; /* Adjust the width of the sidebar */
+		margin-left: 20px; /* Add margin for spacing between main content and sidebar */
+	}
+
+	/* Style for the gallery images */
+	.gallery {
+		list-style: none;
+		padding: 0;
+	}
+
+	.gallery li {
+		margin-bottom: 20px;
+	}
+
+	.gallery figure {
+		margin: 0;
+	}
+
+	.gallery figcaption {
+		font-style: italic;
+	}
+	/* Responsive layout */
+	.wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.content-area {
+		padding: 20px;
+	}
+
+	.destination-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 20px;
+	}
+
+	/* Responsive images */
+	.destination-list img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* Typography */
+	h1, h2, h3 {
+		margin: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+
+	/* Blockquotes */
+	blockquote {
+		font-style: italic;
+		margin: 20px 0;
+		padding: 10px 20px;
+		background-color: #f9f9f9;
+		border-left: 4px solid #ccc;
+	}
+
+	/* Footer */
+	footer {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	/* Media queries */
+	@media only screen and (max-width: 768px) {
+		.destination-list {
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.wrapper {
+			width: 100%;
+		}
+
+		.content-area {
+			padding: 10px;
+		}
+
+		.destination-list {
+			grid-template-columns: 1fr;
+		}
+	}

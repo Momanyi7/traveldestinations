@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projectfinal.css"> <!-- Link to external stylesheet -->
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header>
+        <h1>Travel Destinations</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="feature">
+        <div class="feature-text">
+            <h2>The World's Most Stunning Destinations</h2>
+            <p>The world is filled with stunning destinations waiting to be explored, 
+            each offering its own unique charm and allure. </p>
+        </div>
+        
+        <figure class="feature-fig">
+            <img src="reflect-250px.jpg"
+                 srcset="
+                     reflect-250px.jpg 250w,
+                     reflect-500px.jpg 500w,
+                     reflect-1000px.jpg 500w,
+                     reflect-1500px.jpg 500w,
+                     reflect-4032px.jpg 4032w
+                     "
+                 sizes="(max-width:48rem) calc(100vw-12rem), 500px"
+                 alt="image of a Place de la Concorde"/>
+            <figcaption>Place de la Concorde.</figcaption>
+        </figure>
+    </section>
+    <main class="content-area">
+        <section class="main-content">
+            <div class="article-wrapper">
+                <!-- Each article gets an ID that corresponds to the sidebar link -->
+                <article id="paris">
+                    <h2>Paris, France</h2>
+                    <figure>
+                        <img src="paris-250px.jpg"
+                             srcset="
+                                 paris-250px.jpg 250w,
+                                 paris-500px.jpg 500w,
+                                 paris-1000px.jpg 500w,
+                                 paris-1500px.jpg 1500w,
+                                 paris-4032px.jpg 4032w
+                                 "
+                             sizes="(max-width:48rem) calc(100vw-12rem), 500px"
+                             alt="image of a Paris"/>
+                        <figcaption>Paris, France</figcaption>
+                    </figure>
+                    <p>Experience the romance of Paris with its iconic
+                        landmarks like the Eiffel Tower and Louvre Museum.</p>
+                </article>
+                <article id="santorini">
+                    <h2>Santorini, Greece</h2>
+                    <figure>
+                        <img src="santorini-250px.jpg"
+                             srcset="
+                                 santorini-250px.jpg 250w,
+                                 santorini-500px.jpg 500w,
+                                 santorini-1000px.jpg 500w,
+                                 santorini-1500px.jpg 1500w,
+                                 santorini-4032px.jpg 4032w
+                                 "
+                             sizes="(max-width:48rem) calc(100vw-12rem), 500px"
+                             alt="image of a santorini"/>
+                        <figcaption>Santorini, Greece.</figcaption>
+                    </figure>
+                    <p>Relax on the stunning beaches of Santorini and
+                        explore its charming white-washed villages.</p>
+                </article>
+                <article id="machu-picchu">
+                    <h2>Machu Picchu, Peru</h2>
+                    <figure>
+                        <img src="machu-picchu-250px.jpg"
+                             srcset="
+                                 machu-picchu-250px.jpg 250w,
+                                 machu-picchu-500px.jpg 500w,
+                                 machu-picchu-1000px.jpg 500w,
+                                 machu-picchu-1500px.jpg 1500w,
+                                 machu-picchu-4032px.jpg 4032w
+                                 "
+                             sizes="(max-width:48rem) calc(100vw-12rem), 500px"
+                             alt="image of a machu-picchu"/>
+                        <figcaption>Machu Picchu, Peru.</figcaption>
+                    </figure>
+                    <p>Embark on a journey to the ancient ruins of Machu Picchu
+                        and marvel at its breathtaking mountain scenery.</p>
+                </article>
+                <article id="kyoto">
+                    <h2>Kyoto, Japan</h2>
+                    <figure>
+                        <img src="Kyoto-250px.jpg"
+                             srcset="
+                                 Kyoto-250px.jpg 250w,
+                                 Kyoto-500px.jpg 500w,
+                                 Kyoto-1000px.jpg 1000w,
+                                 Kyoto-1500px.jpg 1500w,
+                                 Kyoto-4032px.jpg 4032w
+                                 "
+                             sizes="(max-width:48rem) calc(100vw-12rem), 500px"
+                             alt="image of a Kyoto"/>
+                        <figcaption>Kyoto, Japan.</figcaption>
+                    </figure>
+                    <p>Immerse yourself in the rich culture of Kyoto 
+                        with its beautiful temples, gardens, and traditional tea houses.</p>
+                </article>
+                <article id="new-york-city">
+                    <h2>New York City, USA</h2>
+                    <figure>
+                        <img src="New-York-250px.jpg"
+                             srcset="
+                                 New-York-250px.jpg 250w,
+                                 New-York-500px.jpg 500w,
+                                 New-York-1000px.jpg 1000w,
+                                 New-York-1500px.jpg 1500w,
+                                 New-York-4032px.jpg 4032w
+                                 "
+                             sizes="(max-width:48rem) calc(100vw-12rem), 500px"
+                             alt="image of a New York"/>
+                        <figcaption>New York, USA.</figcaption>
+                    </figure>
+                    <p>Explore the vibrant streets of New York City,
+                        known for its iconic landmarks, Broadway shows, and diverse cuisine.</p>
+                </article>
+                <article id="sydney">
+                    <h2>Sydney, Australia</h2>
+                    <figure>
+                        <img src="Sydney-250px.jpg"
+                             srcset="
+                                 Sydney-250px.jpg 250w,
+                                 Sydney-500px.jpg 500w,
+                                 Sydney-1000px.jpg 1000w,
+                                 Sydney-1500px.jpg 1500w,
+                                 Sydney-4032px.jpg 4032w
+                                 "
+                             sizes="(max-width:48rem) calc(100vw-12rem), 500px"
+                             alt="image of a Sydney"/>
+                        <figcaption>Sydney, Australia.</figcaption>
+                    </figure>
+                    <p>Discover the beauty of Sydney's harbor, 
+                        beaches, and famous landmarks like the Sydney Opera House and Harbour Bridge.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <div class="additional-content-area">
+        <aside class="sidebar">
+            <h2>Featured Destinations</h2>
+            <ul>
+                <!-- Links now use the #ID to navigate to the specific sections -->
+                <li><a href="#paris">Paris, France</a></li>
+                <li><a href="#santorini">Santorini, Greece</a></li>
+                <li><a href="#machu-picchu">Machu Picchu, Peru</a></li>
+                <li><a href="#kyoto">Kyoto, Japan</a></li>
+                <li><a href="#new-york-city">New York City, USA</a></li>
+                <li><a href="#sydney">Sydney, Australia</a></li>
+            </ul>
+        </aside>
+
+
+        <section class="gallery">
+            <figure>
+                <img src="paris.jpg" alt="Paris, France">
+                <figcaption>Iconic Eiffel Tower</figcaption>
+            </figure>
+            <figure>
+                <img src="santorini.jpg" alt="Santorini, Greece">
+                <figcaption>Breathtaking Santorini Sunset</figcaption>
+            </figure>
+            <figure>
+                <img src="machu.jpg" alt="Machu Picchu, Peru">
+                <figcaption>Ancient Ruins of Machu Picchu</figcaption>
+            </figure>
+            <figure>
+                <img src="Sydney.jpg" alt="Sydney, Australia">
+                <figcaption>The Sydney Opera House</figcaption>
+            </figure>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <section class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+            <section class="social-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="@nyangaufm">Instagram</a></li>
+                    <li><a href="https://www.Facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com/home">Twitter</a></li>
+                </ul>
+            </section>
+        </div>
+        <p>&copy; Travel Destinations 2024</p>
+    </footer>
+</div><!--close wrapper-->
+</body>
+</html>

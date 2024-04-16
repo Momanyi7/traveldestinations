@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projectfinal.css"> <!-- Link to external stylesheet -->
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header>
+        <h1>Travel Destinations</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="feature">
+        <div class="feature-text">
+            <h2>The World's Most Stunning Destinations</h2>
+            <p>Discover breathtaking landscapes, vibrant cultures, and unforgettable experiences.</p>
+        </div>
+		
+        <figure class="feature-fig">
+            <img src="reflect-250px.jpg"
+                 srcset="
+                     reflect-250px.jpg 250w,
+                     reflect-500px.jpg 500w,
+                     reflect-1000px.jpg 500w,
+                     reflect-1500px.jpg 500w,
+                     reflect-1500px.jpg 1000w,
+                     reflect-1500px.jpg 1500w,
+                     reflect-1500px.jpg 4032w
+                     "
+                 sizes="(max-width:48rem) calc(100vw-12rem), 500px"
+                 alt="image of a reflection"/>
+            <figcaption>Nature.</figcaption>
+        </figure>
+	</section>
+		<main class="content-area">
+			<section class="main-content">
+				<div class="article-wrapper">
+					<!-- Each article gets an ID that corresponds to the sidebar link -->
+					<article id="paris">
+						<h2>Paris, France</h2>
+						<p>Experience the romance of Paris with its iconic landmarks like the Eiffel Tower and Louvre Museum.</p>
+					</article>
+					<article id="santorini">
+						<h2>Santorini, Greece</h2>
+						<p>Relax on the stunning beaches of Santorini and explore its charming white-washed villages.</p>
+					</article>
+					<article id="machu-picchu">
+						<h2>Machu Picchu, Peru</h2>
+						<p>Embark on a journey to the ancient ruins of Machu Picchu and marvel at its breathtaking mountain scenery.</p>
+					</article>
+					<article id="kyoto">
+						<h2>Kyoto, Japan</h2>
+						<p>Immerse yourself in the rich culture of Kyoto with its beautiful temples, gardens, and traditional tea houses.</p>
+					</article>
+					<article id="new-york-city">
+						<h2>New York City, USA</h2>
+						<p>Explore the vibrant streets of New York City, known for its iconic landmarks, Broadway shows, and diverse cuisine.</p>
+					</article>
+					<article id="sydney">
+						<h2>Sydney, Australia</h2>
+						<p>Discover the beauty of Sydney's harbor, beaches, and famous landmarks like the Sydney Opera House and Harbour Bridge.</p>
+					</article>
+				</div>
+			</section>
+		</main>
+		<div class="additional-content-area">
+			<aside class="sidebar">
+				<h2>Featured Destinations</h2>
+				<ul>
+					<!-- Links now use the #ID to navigate to the specific sections -->
+					<li><a href="#paris">Paris, France</a></li>
+					<li><a href="#santorini">Santorini, Greece</a></li>
+					<li><a href="#machu-picchu">Machu Picchu, Peru</a></li>
+					<li><a href="#kyoto">Kyoto, Japan</a></li>
+					<li><a href="#new-york-city">New York City, USA</a></li>
+					<li><a href="#sydney">Sydney, Australia</a></li>
+				</ul>
+			</aside>
+
+
+			<section class="gallery">
+				<figure>
+					<img src="kenya.jpg" alt="Paris, France">
+					<figcaption>Iconic Eiffel Tower</figcaption>
+				</figure>
+				<figure>
+					<img src="kenya.jpg" alt="Santorini, Greece">
+					<figcaption>Breathtaking Santorini Sunset</figcaption>
+				</figure>
+				<figure>
+					<img src="walking.jpg" alt="Machu Picchu, Peru">
+					<figcaption>Ancient Ruins of Machu Picchu</figcaption>
+				</figure>
+				<figure>
+					<img src="walking.jpg" alt="Machu Picchu, Peru">
+					<figcaption>Ancient Ruins of Machu Picchu</figcaption>
+				</figure>
+			</section>
+		</div>
+
+			<footer>
+				<div class="footer-content">
+					<section class="newsletter">
+						<h3>Subscribe to Our Newsletter</h3>
+						<form action="#" method="post">
+							<input type="email" name="email" placeholder="Enter your email">
+							<button type="submit">Subscribe</button>
+						</form>
+					</section>
+					<section class="social-links">
+						<h3>Follow Us</h3>
+						<ul>
+							<li><a href="@nyangaufm">Instagram</a></li>
+							<li><a href="https://www.Facebook.com">Facebook</a></li>
+							<li><a href="https://twitter.com/home">Twitter</a></li>
+						</ul>
+					</section>
+				</div>
+				<p>&copy; Travel Destinations 2024</p>
+			</footer>
+</div><!--close wrapper-->
+</body>
+</html>
